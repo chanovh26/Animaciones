@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+}
+
+div.cuadrado {
+    width: 200px;
+    height: 200px;
+    background-color: chocolate;
+    transition-duration: 2000ms;
+}
+
+div.cuadrado:hover {
+    transform: rotateY(45deg) translate();
+/*     translate: 200px; */
+    transform: rotateX(200deg);
+}
+
+@keyframes Fantasma{
+    0% {
+        opacity: 0%;
+    }
+
+    25% {
+        transform: translateY(-20px);
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+
+}
+
+.Fantasma {
+    width: 100px;
+    height: 100px;
+    animation: Fantasma 3s infinite;
+}
